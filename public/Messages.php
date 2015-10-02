@@ -2,9 +2,9 @@
 
 // set database server access variables: 
 $host = "localhost";
-$user = "sms";
-$pass = "wordpress";
-$db = "smsplugin";
+$user = "root";
+$pass = "";
+$db = "plugin";
 
 // open connection 
 $connection = mysql_connect($host, $user, $pass) or die ("Unable to connect!");
