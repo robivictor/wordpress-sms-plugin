@@ -21,14 +21,18 @@ $result = mysql_query($query) or die ("Error in query: $query. ".mysql_error());
 // see if any rows were returned 
 if (mysql_num_rows($result) > 0) {
     // yes 
-    // print them one after another 
-    echo "<table cellpadding=10 border=1>";
+    // print them one after another
+    echo "<a class='btn btn-default'>Compose</a>";
+    echo "<a class='btn btn-default'>Inbox</a>";
+    echo "<a class='btn btn-default'>Outbox</a>";
+
+    echo "<table class='table table-responsive' style='width:80%'>";
     while($row = mysql_fetch_row($result)) {
         echo "<tr>";
-        echo "<td>"."<center>".$row[7]."<br>".$row[2]."<br>".$row[0]."<br>".$row[4]."<br>".$row[8]."</center>"."</td>";
-        echo "<td>" . $row."</td>";
-        echo "<td>".$row."</td>";
-        echo "</tr>";
+        echo "<td>".$row[1]."</td>";
+        echo "<td>".$row[2]."</td>";
+        echo "<td>".$row[3]."</td>";
+        echo "<tr>";
     }
     echo "</table>";
 }

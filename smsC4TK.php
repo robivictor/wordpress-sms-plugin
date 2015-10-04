@@ -74,7 +74,7 @@ function mt_sublevel_page()
 // of the custom Test Toplevel menu
 function mt_sublevel_page2()
 {
-    echo "<h1>Phonebook</h1>";
+    echo "<h1>Messages</h1>";
     include("public/Messages.php");
 }
 function activate_plugin_name()

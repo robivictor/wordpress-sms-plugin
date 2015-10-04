@@ -40,19 +40,19 @@ class Plugin_Name_Activator {
 		$sql = 'CREATE TABLE ' . $table_name . '(
     id INTEGER(20) UNSIGNED AUTO_INCREMENT,
     name VARCHAR(255),
-    phone_number VARCAHR(255) UNSIGNED,
+    phone_number VARCHAR(255) NOT NULL,
     registered_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY (id) )';
 
 		$table_name1 = $mpdb->prefix . "messages";
 
 		$sql1 = 'CREATE TABLE ' . $table_name1 . '(
-    id INTEGER(20) UNSIGNED AUTO_INCREMENT,
+    id INTEGER(32) UNSIGNED AUTO_INCREMENT,
     name VARCHAR(255),
-    phone_number VARCHAR(255) UNSIGNED,
+    phone_number VARCHAR(255) NOT NULL,
     message_id INTEGER(50) NOT NULL,
     message VARCHAR(255) NOT NULL,
-    device_id INTEGER(20) NOT NULL,
+    device_id INTEGER(50) NOT NULL,
     sent_to VARCHAR(255) NOT NULL,
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY (id) )';
