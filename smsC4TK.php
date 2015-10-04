@@ -31,6 +31,12 @@
  * The code that runs during plugin activation.
  * This action is documented in includes/class-plugin-name-activator.php
  */
+add_action( 'wp_enqueue_scripts', 'my_enqueued_assets' );
+
+function my_enqueued_assets() {
+    wp_enqueue_style( 'my-font', '//fonts.googleapis.com/css?family=Roboto' );
+}
+
 add_action('admin_menu', 'mt_add_pages');
 
 // action function for above hook
@@ -52,6 +58,7 @@ function mt_add_pages()
 // mt_toplevel_page() displays the page content for the custom Test Toplevel menu
 function sms_settings()
 {
+    echo "<h1>Settings</h1>";
     include("public/settings.php");
 }
 
@@ -59,6 +66,7 @@ function sms_settings()
 // of the custom Test Toplevel menu
 function mt_sublevel_page()
 {
+    echo "<h1>Phonebook</h1>";
     include("public/Phonebook.php");
 }
 
@@ -66,6 +74,7 @@ function mt_sublevel_page()
 // of the custom Test Toplevel menu
 function mt_sublevel_page2()
 {
+    echo "<h1>Phonebook</h1>";
     include("public/Messages.php");
 }
 function activate_plugin_name()

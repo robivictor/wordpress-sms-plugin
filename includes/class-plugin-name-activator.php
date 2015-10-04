@@ -40,7 +40,7 @@ class Plugin_Name_Activator {
 		$sql = 'CREATE TABLE ' . $table_name . '(
     id INTEGER(20) UNSIGNED AUTO_INCREMENT,
     name VARCHAR(255),
-    phone_number INTEGER(20) UNSIGNED,
+    phone_number VARCAHR(255) UNSIGNED,
     registered_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY (id) )';
 
@@ -49,7 +49,7 @@ class Plugin_Name_Activator {
 		$sql1 = 'CREATE TABLE ' . $table_name1 . '(
     id INTEGER(20) UNSIGNED AUTO_INCREMENT,
     name VARCHAR(255),
-    phone_number INTEGER(20) UNSIGNED,
+    phone_number VARCHAR(255) UNSIGNED,
     message_id INTEGER(50) NOT NULL,
     message VARCHAR(255) NOT NULL,
     device_id INTEGER(20) NOT NULL,
