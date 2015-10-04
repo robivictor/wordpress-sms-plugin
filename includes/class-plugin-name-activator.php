@@ -89,8 +89,10 @@ class Plugin_Name_Activator {
     id INTEGER(20) UNSIGNED AUTO_INCREMENT,
     name VARCHAR(255),
     phone_number INTEGER(20) UNSIGNED,
-    message_id INTEGER(50),
-    message VARCHAR(255),
+    message_id INTEGER(50) NOT NULL,
+    message VARCHAR(255) NOT NULL,
+    device_id INTEGER(20) NOT NULL,
+    sent_to VARCHAR(255) NOT NULL,
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY (id) )';
 
