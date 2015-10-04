@@ -4,7 +4,7 @@
  *
  */
 
-require_once( '/includes/lib/database.php' );
+require_once( '/includes/database_functions.php' );
 
 function get_message()
 {
@@ -98,13 +98,15 @@ function get_message()
         }
         // now let's write the info sent by SMSsync
         //to a file called test.txt
-        $string = "From: ".$from."\n";
-        $string .= "Message: ".$message."\n";
-        $string .= "Timestamp: ".$sent_timestamp."\n";
-        $string .= "Messages Id:" .$message_id."\n";
-        $string .= "Sent to: ".$sent_to."\n";
-        $string .= "Device ID: ".$device_id."\n\n\n";
-        write_message_to_file($string);
+        insert_message($from,$message,$sent_timestamp,$message_id,$sent_to,$device_id);
+
+//        $string = "From: ".$from."\n";
+//        $string .= "Message: ".$message."\n";
+//        $string .= "Timestamp: ".$sent_timestamp."\n";
+//        $string .= "Messages Id:" .$message_id."\n";
+//        $string .= "Sent to: ".$sent_to."\n";
+//        $string .= "Device ID: ".$device_id."\n\n\n";
+//        write_message_to_file($string);
     }
     /**
      * Comment the code below out if you want to send an instant

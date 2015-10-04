@@ -26,14 +26,57 @@
  */
 
 // If this file is called directly, abort.
-if (!defined('WPINC')) {
-    die;
-}
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-plugin-name-activator.php
  */
+add_action( 'wp_enqueue_scripts', 'my_enqueued_assets' );
+
+function my_enqueued_assets() {
+    wp_enqueue_style( 'my-font', '//fonts.googleapis.com/css?family=Roboto' );
+}
+
+add_action('admin_menu', 'mt_add_pages');
+
+// action function for above hook
+function mt_add_pages()
+{
+
+    // Add a new top-level menu (ill-advised):
+    add_menu_page(__('SMS Settings', 'menu-test'), __('C4TK SMS Plugin', 'menu-test'), 'manage_options', 'sms-settings', 'sms_settings', menu - icon - generic);
+
+    //add_menu_page( 'custom menu title', 'C4TK SMS Plugin' , 'manage_options', 'my-facebook-tags/phonebook.php', '', menu-icon-generic );
+
+    // Add a submenu to the custom top-level menu:
+    add_submenu_page('sms-settings', __('Phone Book', 'menu-test'), __('Phone Book', 'menu-test'), 'manage_options', 'phonebook', 'mt_sublevel_page');
+
+    // Add a second submenu to the custom top-level menu:
+    add_submenu_page('sms-settings', __('Messages', 'menu-test'), __('Messages', 'menu-test'), 'manage_options', 'messages', 'mt_sublevel_page2');
+}
+
+// mt_toplevel_page() displays the page content for the custom Test Toplevel menu
+function sms_settings()
+{
+    echo "<h1>Settings</h1>";
+    include("public/settings.php");
+}
+
+// mt_sublevel_page() displays the page content for the first submenu
+// of the custom Test Toplevel menu
+function mt_sublevel_page()
+{
+    echo "<h1>Phonebook</h1>";
+    include("public/Phonebook.php");
+}
+
+// mt_sublevel_page2() displays the page content for the second submenu
+// of the custom Test Toplevel menu
+function mt_sublevel_page2()
+{
+    echo "<h1>Messages</h1>";
+    include("public/Messages.php");
+}
 function activate_plugin_name()
 {
     require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-activator.php';
