@@ -2,11 +2,7 @@
 
 // set database server access variables: 
 $host = "localhost";
-<<<<<<< HEAD
-$user = "smsplugin";
-=======
 $user = "sms";
->>>>>>> 6f4a45ccc27701e6d2ddf058d26dd1e0a5617dc1
 $pass = "wordpress";
 $db = "smsplugin";
 

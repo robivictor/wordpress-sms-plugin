@@ -13,7 +13,7 @@
  * @package           Plugin_Name
  *
  * @wordpress-plugin
- * Plugin Name:       sms C4TK plugin
+ * Plugin Name:       SMS C4TK plugin
  * Plugin URI:        http://example.com/plugin-name-uri/
  * Description:       A cool sms plugin that uses your Android phone as SMS gateway.
  * Version:           1.0.0
@@ -31,12 +31,6 @@
  * The code that runs during plugin activation.
  * This action is documented in includes/class-plugin-name-activator.php
  */
-add_action( 'wp_enqueue_scripts', 'my_enqueued_assets' );
-
-function my_enqueued_assets() {
-    wp_enqueue_style( 'my-font', '//fonts.googleapis.com/css?family=Roboto' );
-}
-
 add_action('admin_menu', 'mt_add_pages');
 
 // action function for above hook
