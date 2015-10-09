@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    Arif_Sms
+ * @subpackage Arif_Sms/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Loader {
+class Arif_Sms_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.
@@ -104,9 +104,7 @@ class Plugin_Name_Loader {
 			'priority'      => $priority,
 			'accepted_args' => $accepted_args
 		);
-
 		return $hooks;
-
 	}
 
 	/**
@@ -114,6 +112,7 @@ class Plugin_Name_Loader {
 	 *
 	 * @since    1.0.0
 	 */
+
 	public function run() {
 
 		foreach ( $this->filters as $hook ) {
@@ -125,5 +124,4 @@ class Plugin_Name_Loader {
 		}
 
 	}
-
 }

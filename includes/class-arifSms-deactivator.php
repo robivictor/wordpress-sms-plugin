@@ -20,7 +20,7 @@
  * @subpackage Plugin_Name/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Deactivator {
+class Arif_Sms_Deactivator {
 
 	/**
 	 * Short Description. (use period)
@@ -30,7 +30,9 @@ class Plugin_Name_Deactivator {
 	 * @since    1.0.0
 	 */
 	public static function deactivate() {
-
+		global $wpdb;
+		$wpdb->delete(prefix . "phone_list");
+		$wpdb->delete(prefix . "messages");
 	}
 
 }

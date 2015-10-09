@@ -11,6 +11,8 @@
  * @package    Plugin_Name
  * @subpackage Plugin_Name/admin/partials
  */
+echo "<h1>Hello</h1>"
+
 ?>
 
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->

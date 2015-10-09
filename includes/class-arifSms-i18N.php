@@ -24,7 +24,7 @@
  * @subpackage Plugin_Name/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_i18n {
+class Arif_Sms_i18n {
 
 	/**
 	 * The domain specified for this plugin.

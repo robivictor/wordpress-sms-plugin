@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/admin
+ * @package    Arif_Sms
+ * @subpackage Arif_Sms/admin
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Admin {
+class Arif_Sms_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -65,10 +65,10 @@ class Plugin_Name_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Plugin_Name_Loader as all of the hooks are defined
+		 * defined in Arif_Sms_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Plugin_Name_Loader will then create the relationship
+		 * The Arif_Sms_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -89,18 +89,30 @@ class Plugin_Name_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Plugin_Name_Loader as all of the hooks are defined
+		 * defined in Arif_Sms_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Plugin_Name_Loader will then create the relationship
+		 * The Arif_Sms_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
 
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/angular.min.js');
-
-
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js');
 	}
 
+	//mt_toplevel_page() displays the page content for the custom Test Toplevel menu
+
+
+	// action function for above hook
+	public function mt_add_menu()
+	{
+		// Add a new top-level menu (ill-advised):
+		add_menu_page('Arifsms','Arif SMS', 'manage_options', 'admin.php?page=ArifSms', array( $this,  'display' ));
+	}
+	function display()
+	{
+		include_once( 'partials/arif-sms-admin-display.php' );
+    }
 }
