@@ -71,11 +71,11 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
-                            <span class="info-box-icon bg-aqua"><i class="ion ion-person"></i></span>
+                            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Phone</span>
-                                <span class="info-box-number">900<small>contacts</small></span>
+                                <span class="info-box-text">CPU Traffic</span>
+                                <span class="info-box-number">90<small>%</small></span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -84,11 +84,11 @@
                     <!-- /.col -->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
-                            <span class="info-box-icon bg-red"> <i class="ion ion-person-stalker"></i></span>
+                            <span class="info-box-icon bg-red"><i class="ion ion-ios-gear-users"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Groups</span>
-                                <span class="info-box-number">20 groups</span>
+                                <span class="info-box-text">Likes</span>
+                                <span class="info-box-number">41,410</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -101,11 +101,11 @@
 
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
-                            <span class="info-box-icon bg-green"><i class="ion ion-email" ></i><i class="ion ion-ios-arrow-thin-down" > </i></span>
+                            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Inbox</span>
-                                <span class="info-box-number">60</span>
+                                <span class="info-box-text">Sales</span>
+                                <span class="info-box-number">760</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -114,11 +114,11 @@
                     <!-- /.col -->
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
-                            <span class="info-box-icon bg-yellow"> <i class="ion ion-email" ></i><i class="ion ion-ios-arrow-thin-up" > </i></span>
+                            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Outbox</span>
-                                <span class="info-box-number">15</span>
+                                <span class="info-box-text">New Members</span>
+                                <span class="info-box-number">2,000</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
@@ -183,30 +183,26 @@
                     <div class="col-md-4">
 
                             <div class="box-header with-border">
-                                <h3 class="box-title">Add Contact</h3>
+                                <h3 class="box-title">Subscription Form</h3>
                             </div><!-- /.box-header -->
                             <!-- form start -->
                             <form class="form-horizontal">
                                 <div class="box-body">
                                     <div class="form-group">
-
                                         <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
                                         <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Name">
+                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label>phone:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-phone"></i>
-                                            </div>
-                                            <input type="text" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask>
-                                        </div><!-- /.input group -->
-                                    </div><!-- /.form group -->
+                                        <label for="inputPassword3" class="col-sm-2 control-label">Phone</label>
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                        </div>
+                                    </div>
 
-                                    <div >
-                                        <button type="submit" class="btn btn-info pull-right">Add</button>
+                                    <div class="box-footer">
+                                        <button type="submit" class="btn btn-info pull-right">Subscribe</button>
                                     </div><!-- /.box-footer -->
 
 
@@ -251,6 +247,76 @@
                                             <td class="label label-success">{{ x.status}}</td>
                                         </tr>
 
+                                        <tr>
+                                            <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                                            <td>Call of Duty IV</td>
+                                            <td><span class="label label-success">Shipped</span></td>
+                                            <td>
+                                                <div class="sparkbar" data-color="#00a65a" data-height="20">
+                                                    90,80,90,-70,61,-83,63
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                                            <td>Samsung Smart TV</td>
+                                            <td><span class="label label-warning">Pending</span></td>
+                                            <td>
+                                                <div class="sparkbar" data-color="#f39c12" data-height="20">
+                                                    90,80,-90,70,61,-83,68
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                                            <td>iPhone 6 Plus</td>
+                                            <td><span class="label label-danger">Delivered</span></td>
+                                            <td>
+                                                <div class="sparkbar" data-color="#f56954" data-height="20">
+                                                    90,-80,90,70,-61,83,63
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                                            <td>Samsung Smart TV</td>
+                                            <td><span class="label label-info">Processing</span></td>
+                                            <td>
+                                                <div class="sparkbar" data-color="#00c0ef" data-height="20">
+                                                    90,80,-90,70,-61,83,63
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                                            <td>Samsung Smart TV</td>
+                                            <td><span class="label label-warning">Pending</span></td>
+                                            <td>
+                                                <div class="sparkbar" data-color="#f39c12" data-height="20">
+                                                    90,80,-90,70,61,-83,68
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                                            <td>iPhone 6 Plus</td>
+                                            <td><span class="label label-danger">Delivered</span></td>
+                                            <td>
+                                                <div class="sparkbar" data-color="#f56954" data-height="20">
+                                                    90,-80,90,70,-61,83,63
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                                            <td>Call of Duty IV</td>
+                                            <td><span class="label label-success">Shipped</span></td>
+                                            <td>
+                                                <div class="sparkbar" data-color="#00a65a" data-height="20">
+                                                    90,80,90,-70,61,-83,63
+                                                </div>
+                                            </td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -258,9 +324,10 @@
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer clearfix">
-
+                                <a href="javascript::;" class="btn btn-sm btn-info btn-flat pull-left">Place New
+                                    Order</a>
                                 <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">View All
-                                    Messages</a>
+                                    Orders</a>
                             </div>
                             <!-- /.box-footer -->
                         </div>
@@ -270,7 +337,7 @@
 
                         <div class="box box-warning direct-chat direct-chat-warning">
                             <div class="box-header with-border">
-                                <h3 class="box-title">Send Message</h3>
+                                <h3 class="box-title">Direct Chat</h3>
 
                                 <div class="box-tools pull-right">
                                     <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
