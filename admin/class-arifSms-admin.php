@@ -71,10 +71,15 @@ class Arif_Sms_Admin {
 		 * The Arif_Sms_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
+		 *
 		 */
 
 		//wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/plugin-name-admin.css', array(), $this->version, 'all' );
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/bootstrap.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name.bootstrap, plugin_dir_url( __FILE__ ) . 'css/bootstrap.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name.ion, 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name.ion, '"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name.admin, plugin_dir_url( __FILE__ ) . 'dist/css/AdminLTE.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name.admin, plugin_dir_url( __FILE__ ) . 'dist/css/skin.min.css', array(), $this->version, 'all' );
 
 	}
 
@@ -98,8 +103,15 @@ class Arif_Sms_Admin {
 		 */
 
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js', array( 'jquery' ), $this->version, false );
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/angular.min.js');
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/bootstrap.min.js');
+		wp_enqueue_script( $this->plugin_name.admin, plugin_dir_url( __FILE__ ) . 'dist/js/jQuery-2.1.4.min.js',array('jquery'),$this->version,false);
+		wp_enqueue_script( $this->plugin_name.bootstrap, plugin_dir_url( __FILE__ ) .'js/bootstrap.min.js',array( 'jquery' ),'',false);
+		wp_enqueue_script( $this->plugin_name.admin, plugin_dir_url( __FILE__ ) . 'dist/js/dashboard.js',array('jquery'),$this->version,false);
+		wp_enqueue_script( $this->plugin_name.admin, plugin_dir_url( __FILE__ ) . 'dist/js/app.min.js',array('jquery'),$this->version,false);
+		wp_enqueue_script( $this->plugin_name.admin, plugin_dir_url( __FILE__ ) . 'dist/js/demo.js',array('jquery'),$this->version,false);
+
+		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/angular.min.js');
+		//wp_enqueue_scripts();
+
 	}
 
 	//mt_toplevel_page() displays the page content for the custom Test Toplevel menu
@@ -113,6 +125,7 @@ class Arif_Sms_Admin {
 	}
 	function display()
 	{
-		include_once( 'partials/arif-sms-admin-display.php' );
+		//include_once( 'partials/arif-sms-admin-display.php' );
+		include_once( 'partials/dashboard.php' );
     }
 }
