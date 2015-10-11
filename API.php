@@ -56,7 +56,9 @@ function send_task(){
             $the_msg = (array) $msg;
             array_push($msgs,["to"=>$the_msg['msg_to'],"message"=>$the_msg['message'],"uuid" => "1ba368bd-c467-4374-bf268"]);
         }
-        $message_table->delete("null");
+        //delete all pending messages after sending to SMSSync
+        $message_table->delete_all();
+
         // Send JSON response back to SMSsync
         $response = json_encode(["payload"=>["success"=>true,"task"=>"send","secret" => $Secret_Code,"messages"=>array_values($msgs)]]);
         send_response($response);
