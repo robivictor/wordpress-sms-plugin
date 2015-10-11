@@ -28,21 +28,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="API.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="API.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49718308" vertical-offset="497" max-vertical-offset="1479">
-              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+            <state vertical-scroll-proportion="-7.0384617" vertical-offset="701" max-vertical-offset="1564">
+              <caret line="52" column="61" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_new1.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_new1.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/test_new1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.14107884" vertical-offset="0" max-vertical-offset="723">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -51,12 +51,13 @@
       <file leaf-file-name="Test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/Test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1003">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.8846154" vertical-offset="195" max-vertical-offset="1326">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="51" />
               <folding>
-                <marker date="1444475294100" expanded="true" signature="193:515" placeholder="CREATE TABLE..." />
-                <marker date="1444475294100" expanded="true" signature="715:953" placeholder="CREATE TABLE..." />
-                <marker date="1444475294100" expanded="true" signature="1341:1391" placeholder="SELECT * FRO.._table_name WHERE..." />
+                <marker date="1444559345273" expanded="true" signature="193:515" placeholder="CREATE TABLE..." />
+                <marker date="1444559345273" expanded="true" signature="725:943" placeholder="CREATE TABLE..." />
+                <marker date="1444559345273" expanded="true" signature="1148:1386" placeholder="CREATE TABLE..." />
+                <marker date="1444559345273" expanded="true" signature="1774:1824" placeholder="SELECT * FRO.._table_name WHERE..." />
               </folding>
             </state>
           </provider>
@@ -70,8 +71,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/test_new1.php" />
         <option value="$PROJECT_DIR$/API.php" />
+        <option value="$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/Test.php" />
+        <option value="$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/test_new1.php" />
       </list>
     </option>
   </component>
@@ -213,30 +215,31 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/API.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.0384617" vertical-offset="701" max-vertical-offset="1564">
+          <caret line="52" column="61" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/Test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1003">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.8846154" vertical-offset="195" max-vertical-offset="1326">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="51" />
           <folding>
-            <marker date="1444475294100" expanded="true" signature="193:515" placeholder="CREATE TABLE..." />
-            <marker date="1444475294100" expanded="true" signature="715:953" placeholder="CREATE TABLE..." />
-            <marker date="1444475294100" expanded="true" signature="1341:1391" placeholder="SELECT * FRO.._table_name WHERE..." />
+            <marker date="1444559345273" expanded="true" signature="193:515" placeholder="CREATE TABLE..." />
+            <marker date="1444559345273" expanded="true" signature="725:943" placeholder="CREATE TABLE..." />
+            <marker date="1444559345273" expanded="true" signature="1148:1386" placeholder="CREATE TABLE..." />
+            <marker date="1444559345273" expanded="true" signature="1774:1824" placeholder="SELECT * FRO.._table_name WHERE..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/test_new1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
-          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49718308" vertical-offset="497" max-vertical-offset="1479">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.14107884" vertical-offset="0" max-vertical-offset="723">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
           <folding />
         </state>
       </provider>
