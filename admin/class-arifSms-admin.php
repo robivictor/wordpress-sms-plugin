@@ -109,7 +109,14 @@ class Arif_Sms_Admin {
 		wp_enqueue_script( $this->plugin_name.admin, plugin_dir_url( __FILE__ ) . 'dist/js/app.min.js',array('jquery'),$this->version,false);
 		wp_enqueue_script( $this->plugin_name.admin, plugin_dir_url( __FILE__ ) . 'dist/js/demo.js',array('jquery'),$this->version,false);
 
-		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/angular.min.js');
+		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/angular.min.js',array('jquery'),$this->version,false);
+		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/jquery.inputmask.js',array('jquery'),$this->version,false);
+		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/jquery.inputmask.date.extensions.js',array('jquery'),$this->version,false);
+		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/jquery.inputmask.extensions.js',array('jquery'),$this->version,false);
+
+
+
+
 		//wp_enqueue_scripts();
 
 	}
