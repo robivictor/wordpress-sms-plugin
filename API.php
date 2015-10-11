@@ -50,12 +50,13 @@ function send_task(){
     if (isset($_GET['task']) AND $_GET['task'] == 'send')
     {
         $msgs = array();
-        $message_table = new MyDataBase('sms_messages');  // connect to a table that contains messages to be sent
+        $message_table = new MyDataBase('sms_pending_messages');  // connect to a table that contains messages to be sent
         $Pending_Messages = $result = (array) $message_table->get_all();
         foreach($Pending_Messages as $msg){
             $the_msg = (array) $msg;
             array_push($msgs,["to"=>$the_msg['msg_to'],"message"=>$the_msg['message'],"uuid" => "1ba368bd-c467-4374-bf268"]);
         }
+        $message_table->delete("null");
         // Send JSON response back to SMSsync
         $response = json_encode(["payload"=>["success"=>true,"task"=>"send","secret" => $Secret_Code,"messages"=>array_values($msgs)]]);
         send_response($response);
