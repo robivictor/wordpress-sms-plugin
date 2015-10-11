@@ -3,6 +3,7 @@ require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
 global $wpdb;
 
 function get_Message(){
+    // get message from SMSsync then save it to database
     require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
     include_once 'MyDataBase.php';
     global $wpdb;
@@ -29,7 +30,6 @@ function send_instant_message($to,$message)
     $config_table = new MyDataBase('sms_config');
     $result = (array) $config_table->get_by(array('conf_type'=>'Secret'))[0];
     $Secret_Code = $result['conf_value'];
-
     $s = true;
     $reply[0] = ["to" => $to,"message" => $message,"uuid" => "1ba368bd-c467-4374-bf28"];
     // Send JSON response back to SMSsync
@@ -43,24 +43,17 @@ function send_instant_message($to,$message)
 }
 function send_task()
 {
-    /**
-     * Comment the code below out if you want to send an instant
-     * reply as SMS to the user.
-     *
-     * This feature requires the "Get reply from server" checked on SMSsync.
-     */
     if (isset($_GET['task']) AND $_GET['task'] == 'send')
     {
-        $m = "Sample Task Message 33";
-        $f = "+251916417951";
-        $s = "true";
-        $reply[0] = [
-            "to" => $f,
-            "message" => $m,
-            "uuid" => "1ba368bd-c467-4374-bf268"
-        ];
+        $msgs = array();
+        $message_table = new MyDataBase('sms_messages');
+        $Pending_Messages = $result = (array) $message_table->get_all();
+        foreach($Pending_Messages as $msg){
+            $the_msg = (array) $msg;
+            array_push($msgs,["to"=>$the_msg['msg_to'],"message"=>$the_msg['message'],"uuid" => "1ba368bd-c467-4374-bf268"]);
+        }
         // Send JSON response back to SMSsync
-        $response = json_encode(["payload"=>["success"=>$s,"task"=>"send","secret" => "123456","messages"=>array_values($reply)]]);
+        $response = json_encode(["payload"=>["success"=>true,"task"=>"send","secret" => "123456","messages"=>array_values($msgs)]]);
         send_response($response);
     }
 }
@@ -81,13 +74,7 @@ function write_message_to_file($message)
 }
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     write_message_to_file(json_encode($_POST));
-    if(isset($_GET['task']) AND $_GET['task'] === 'result'){
-       /// get_sms_delivery_report();
-    }else if( isset($_GET['task']) && $_GET['task'] === 'sent'){
-       // get_sent_message_uuids();
-    }else{
-        get_Message();
-    }
+    get_Message();
 }else{
     write_message_to_file(json_encode($_GET));
     echo json_encode('dfsfdgdf');
