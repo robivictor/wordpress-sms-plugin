@@ -41,19 +41,23 @@ function send_instant_message($to,$message)
         ]);
     send_response($response);
 }
-function send_task()
-{
+function send_task(){
+    // Get the secrete code from the database
+    $config_table = new MyDataBase('sms_config');
+    $result = (array) $config_table->get_by(array('conf_type'=>'Secret'))[0];
+    $Secret_Code = $result['conf_value'];
+
     if (isset($_GET['task']) AND $_GET['task'] == 'send')
     {
         $msgs = array();
-        $message_table = new MyDataBase('sms_messages');
+        $message_table = new MyDataBase('sms_messages');  // connect to a table that contains messages to be sent
         $Pending_Messages = $result = (array) $message_table->get_all();
         foreach($Pending_Messages as $msg){
             $the_msg = (array) $msg;
             array_push($msgs,["to"=>$the_msg['msg_to'],"message"=>$the_msg['message'],"uuid" => "1ba368bd-c467-4374-bf268"]);
         }
         // Send JSON response back to SMSsync
-        $response = json_encode(["payload"=>["success"=>true,"task"=>"send","secret" => "123456","messages"=>array_values($msgs)]]);
+        $response = json_encode(["payload"=>["success"=>true,"task"=>"send","secret" => $Secret_Code,"messages"=>array_values($msgs)]]);
         send_response($response);
     }
 }
