@@ -104,5 +104,10 @@ class MyDataBase
 
         return $deleted;
     }
+    public function delete_all(){
+        global $wpdb;
+        $query = "TRUNCATE TABLE `".$this->tableName."`";
+        $delete = $wpdb->query($query);
+    }
 }
 ?>
