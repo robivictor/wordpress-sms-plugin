@@ -1,10 +1,9 @@
 <?php
-require_once( $_SERVER['DOCUMENT_ROOT'] . '/ArifSMS/wp-load.php');
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
 global $wpdb;
 
-
 function get_Message(){
-    require_once( $_SERVER['DOCUMENT_ROOT'] . '/ArifSMS/wp-load.php');
+    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
     include_once 'MyDataBase.php';
     global $wpdb;
 
