@@ -42,6 +42,9 @@ function send_instant_message($to,$message)
     send_response($response);
 }
 function send_task(){
+    require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
+    include_once 'MyDataBase.php';
+    global $wpdb;
     // Get the secrete code from the database
     $config_table = new MyDataBase('sms_config');
     $result = (array) $config_table->get_by(array('conf_type'=>'Secret'))[0];
@@ -64,8 +67,7 @@ function send_task(){
         send_response($response);
     }
 }
-function send_response($response)
-{
+function send_response($response){
     // Avoid caching
     header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
     header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
