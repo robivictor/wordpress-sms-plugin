@@ -28,12 +28,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="API.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="API.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/API.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39306358" vertical-offset="510" max-vertical-offset="1632">
-              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+            <state vertical-scroll-proportion="-51.0" vertical-offset="0" max-vertical-offset="1649">
+              <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class-plugin-name-activator.php" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Downloads/wordpress-sms-plugin-master/wordpress-sms-plugin-master/includes/class-plugin-name-activator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1122">
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding>
+                <marker date="1443923244000" expanded="true" signature="735:959" placeholder="CREATE TABLE..." />
+                <marker date="1443923244000" expanded="true" signature="1020:1377" placeholder="CREATE TABLE..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,8 +54,8 @@
       <file leaf-file-name="API.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/API.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693" vertical-offset="510" max-vertical-offset="1581">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state vertical-scroll-proportion="25.038462" vertical-offset="957" max-vertical-offset="1649">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -51,11 +64,11 @@
       <file leaf-file-name="MyDataBase.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/MyDataBase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1921">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="102" max-vertical-offset="2023">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <marker date="1444477566750" expanded="true" signature="509:545" placeholder="SELECT * FRO..." />
-                <marker date="1444477566750" expanded="true" signature="877:919" placeholder="SELECT * FRO..." />
+                <marker date="1444560697266" expanded="true" signature="509:545" placeholder="SELECT * FRO..." />
+                <marker date="1444560697266" expanded="true" signature="877:919" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -87,13 +100,13 @@
       <file leaf-file-name="Test.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/Test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1326">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="51" />
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1343">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="26" />
               <folding>
-                <marker date="1444559345273" expanded="true" signature="193:515" placeholder="CREATE TABLE..." />
-                <marker date="1444559345273" expanded="true" signature="725:943" placeholder="CREATE TABLE..." />
-                <marker date="1444559345273" expanded="true" signature="1148:1386" placeholder="CREATE TABLE..." />
-                <marker date="1444559345273" expanded="true" signature="1774:1824" placeholder="SELECT * FRO.._table_name WHERE..." />
+                <marker date="1444576827662" expanded="true" signature="193:553" placeholder="CREATE TABLE..." />
+                <marker date="1444576827662" expanded="true" signature="763:981" placeholder="CREATE TABLE..." />
+                <marker date="1444576827662" expanded="true" signature="1186:1424" placeholder="CREATE TABLE..." />
+                <marker date="1444576827662" expanded="true" signature="1812:1862" placeholder="SELECT * FRO.._table_name WHERE..." />
               </folding>
             </state>
           </provider>
@@ -107,9 +120,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/Test.php" />
         <option value="$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/test_new1.php" />
         <option value="$PROJECT_DIR$/MyDataBase.php" />
+        <option value="$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/Test.php" />
         <option value="$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/API.php" />
         <option value="$PROJECT_DIR$/API.php" />
       </list>
@@ -122,7 +135,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="1" />
-    <option name="width" value="1438" />
+    <option name="width" value="1439" />
     <option name="height" value="868" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -217,8 +230,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1438" height="868" extended-state="0" />
-    <editor active="true" />
+    <frame x="1" y="1" width="1439" height="868" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -226,7 +239,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964838" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13211524" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -258,7 +271,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -294,50 +309,42 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1326">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="51" />
           <folding>
-            <marker date="1444559345273" expanded="true" signature="193:515" placeholder="CREATE TABLE..." />
-            <marker date="1444559345273" expanded="true" signature="725:943" placeholder="CREATE TABLE..." />
-            <marker date="1444559345273" expanded="true" signature="1148:1386" placeholder="CREATE TABLE..." />
-            <marker date="1444559345273" expanded="true" signature="1774:1824" placeholder="SELECT * FRO.._table_name WHERE..." />
+            <marker date="1444576827662" expanded="true" signature="193:553" placeholder="CREATE TABLE..." />
+            <marker date="1444576827662" expanded="true" signature="763:981" placeholder="CREATE TABLE..." />
+            <marker date="1444576827662" expanded="true" signature="1186:1424" placeholder="CREATE TABLE..." />
+            <marker date="1444576827662" expanded="true" signature="1812:1862" placeholder="SELECT * FRO.._table_name WHERE..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/MyDataBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="102" max-vertical-offset="2023">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1444560697266" expanded="true" signature="509:545" placeholder="SELECT * FRO..." />
+            <marker date="1444560697266" expanded="true" signature="877:919" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/Test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1326">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="51" />
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1343">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1444559345273" expanded="true" signature="193:515" placeholder="CREATE TABLE..." />
-            <marker date="1444559345273" expanded="true" signature="725:943" placeholder="CREATE TABLE..." />
-            <marker date="1444559345273" expanded="true" signature="1148:1386" placeholder="CREATE TABLE..." />
-            <marker date="1444559345273" expanded="true" signature="1774:1824" placeholder="SELECT * FRO.._table_name WHERE..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/test_new1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="221">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/MyDataBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1444477566750" expanded="true" signature="509:545" placeholder="SELECT * FRO..." />
-            <marker date="1444477566750" expanded="true" signature="877:919" placeholder="SELECT * FRO..." />
+            <marker date="1444576827662" expanded="true" signature="193:553" placeholder="CREATE TABLE..." />
+            <marker date="1444576827662" expanded="true" signature="763:981" placeholder="CREATE TABLE..." />
+            <marker date="1444576827662" expanded="true" signature="1186:1424" placeholder="CREATE TABLE..." />
+            <marker date="1444576827662" expanded="true" signature="1812:1862" placeholder="SELECT * FRO.._table_name WHERE..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/API.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="510" max-vertical-offset="1581">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        <state vertical-scroll-proportion="25.038462" vertical-offset="957" max-vertical-offset="1649">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -353,11 +360,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ArifSMS/wp-content/plugins/SMS/test_new1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="221">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/API.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39306358" vertical-offset="510" max-vertical-offset="1632">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        <state vertical-scroll-proportion="-51.0" vertical-offset="0" max-vertical-offset="1649">
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/wordpress-sms-plugin-master/wordpress-sms-plugin-master/includes/class-plugin-name-activator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1122">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <marker date="1443923244000" expanded="true" signature="735:959" placeholder="CREATE TABLE..." />
+            <marker date="1443923244000" expanded="true" signature="1020:1377" placeholder="CREATE TABLE..." />
+          </folding>
         </state>
       </provider>
     </entry>
