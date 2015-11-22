@@ -156,6 +156,9 @@ class Arif_Sms {
 		$this->loader->add_action('admin_menu', $plugin_admin,'mt_add_menu');
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_filter('query_vars',$plugin_admin,'add_query_vars',0);
+		$this->loader->add_action('parse_request',$plugin_admin,'sniff_requests',0);
+		$this->loader->add_action('init',$plugin_admin,'add_endpoint',0);
 	}
 
 

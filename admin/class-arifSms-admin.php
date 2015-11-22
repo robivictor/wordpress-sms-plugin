@@ -22,6 +22,7 @@
  */
 class Arif_Sms_Admin {
 
+	protected $api = 'http://pugme.herokuapp.com/bomb?count=';
 	/**
 	 * The ID of this plugin.
 	 *
@@ -113,12 +114,68 @@ class Arif_Sms_Admin {
 		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/jquery.inputmask.js',array('jquery'),$this->version,false);
 		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/jquery.inputmask.date.extensions.js',array('jquery'),$this->version,false);
 		wp_enqueue_script( $this->plugin_name.angular, plugin_dir_url( __FILE__ ) . 'js/jquery.inputmask.extensions.js',array('jquery'),$this->version,false);
-
-
-
-
 		//wp_enqueue_scripts();
 
+	}
+
+	/** Add public query vars
+	 *	@param array $vars List of current public query vars
+	 *	@return array $vars
+	 */
+	public function add_query_vars($vars){
+		$vars[] = '__api';
+		$vars[] = 'pugs';
+		//$vars[] = 'secret_code';
+		return $vars;
+	}
+
+	/** Add API Endpoint
+	 *	This is where the magic happens - brush up on your regex skillz
+	 *	@return void
+	 */
+	public function add_endpoint(){
+		add_rewrite_rule('^api/pugs/?([0-9]+)?/?','index.php?__api=1&pugs=$matches[1]','top');
+	}
+	/**	Sniff Requests
+	 *	This is where we hijack all API requests
+	 * 	If $_GET['__api'] is set, we kill WP and serve up pug bomb awesomeness
+	 *	@return die if API request
+	 */
+	public function sniff_requests(){
+		global $wp;
+		if(isset($wp->query_vars['__api'])){
+			$this->handle_request();
+			exit;
+		}
+	}
+
+	/** Handle Requests
+	 *	This is where we send off for an intense pug bomb package
+	 *	@return void
+	 */
+	protected function handle_request(){
+		global $wp;
+		$pugs = $wp->query_vars['pugs'];
+		if(!$pugs)
+			$this->send_response('Please tell us how many pugs to send.');
+
+		$pugs = file_get_contents($this->api.$pugs);
+		if($pugs)
+			$this->send_response('200 OK', json_decode($pugs));
+		else
+			$this->send_response('Something went wrong with the pug bomb factory');
+	}
+
+	/** Response Handler
+	 *	This sends a JSON response to the browser
+	 */
+	protected function send_response($msg, $pugs = ''){
+		$response['message'] = $msg;
+		if($pugs)
+			$response['pugs'] = $pugs;
+		header('content-type: application/json; charset=utf-8');
+		echo json_encode($response)."\n";
+		exit;
 	}
 
 	//mt_toplevel_page() displays the page content for the custom Test Toplevel menu
